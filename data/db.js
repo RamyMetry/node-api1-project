@@ -15,8 +15,10 @@ function find() {
 }
 
 function findById(id) {
+  
   return db('users')
     .where({ id: Number(id) })
+    
     .first();
 }
 
